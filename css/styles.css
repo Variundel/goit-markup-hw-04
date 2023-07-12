@@ -166,10 +166,9 @@ color: var(--navyblue, #2E2F42);
 }
 
 .effect-back {
-    background: var(--navyblue, #2E2F42);
+    background: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
-        1x);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     padding: 188px 0 188px; 
