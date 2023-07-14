@@ -169,6 +169,11 @@ color: var(--navyblue, #2E2F42);
 /**----EFFECTIVE----**/
 
 .effect-container {
+    width: 100%;
+        max-width: 1158px;
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 1440px;
 }
 
 .effect-back {
@@ -177,7 +182,7 @@ color: var(--navyblue, #2E2F42);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-    padding: 188px 0 188px; 
+    padding: 188px 0 188px;  
 }
 
 .effect-headline {
