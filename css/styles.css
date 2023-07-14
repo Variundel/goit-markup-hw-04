@@ -595,13 +595,12 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0
 
 .img-nolink {
     display: block;
-    box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
 }
 
-.img-nolink: hover,
-.img-nolink: focus {
-
+.img-nolink:hover,
+.img-nolink:focus {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .img-main {
@@ -613,6 +612,12 @@ box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 
 .img-style {
     width: calc((100%-192px) / 9)
         background: var(--white, #FFF);
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .img-nolink:focus { 
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(0%);
     }
 
 .img-list {
