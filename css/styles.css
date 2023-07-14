@@ -374,6 +374,7 @@ display: flex;
 .team-block-list {
 display: flex;
     gap: 24px;
+    
 }
 
 .team-block-li {
@@ -392,6 +393,10 @@ display: flex;
 
 /**----------------Customers-----------**/
 
+.cust {
+    padding-top: 120px; 
+    padding-bottom: 120px;
+}
 
 .cust-headline {
     color:#2E2F42;
@@ -403,8 +408,7 @@ display: flex;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        margin-bottom: 72px
-        padding-top: 120px;
+        margin-bottom: 72px;
 }
 
 .cust-list {
@@ -417,18 +421,30 @@ display: flex;
 }
 
 .cust-list-item {
-    width: calc((100%-120px) / 6);
+    width: calc((100% - 120px) / 6);
     border-radius: 4px;
-    border: 1px solid#8E8F99;
     padding: 16px 32px;
+    height: 88px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cust-list-item:hover,
-.cust-list-item:focus {
+.cust-list-accent:hover,
+.cust-list-accent:focus {
 color: #404bbf;
 border-color: #404bbf;
+}
+
+.cust-list-item-accent {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8e8f99;
+
 }
 
 .cust-list-svg {
