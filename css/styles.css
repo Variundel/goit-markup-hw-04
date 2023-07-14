@@ -84,15 +84,16 @@ align-items: center;
         line-height: 1.5;
         letter-spacing: 0.02em;
         padding: 24px 0 24px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-list-item{
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #404bbf;
 }
 
 .current {
     position: relative;
+    color: #404bbf;
 }
 
 .current::after {
@@ -391,9 +392,6 @@ display: flex;
 
 /**----------------Customers-----------**/
 
-.cust {
-padding: 120px 0;
-}
 
 .cust-headline {
     color:#2E2F42;
@@ -405,7 +403,8 @@ padding: 120px 0;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        margin-bottom: 72px;
+        margin-bottom: 72px
+        padding-top: 120px;
 }
 
 .cust-list {
@@ -414,6 +413,7 @@ padding: 120px 0;
     justify-content: center;
     gap: 24px;
     height: 88px;
+    padding-bottom: 120px;
 }
 
 .cust-list-item {
@@ -424,7 +424,6 @@ padding: 120px 0;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .cust-list-item:hover,
 .cust-list-item:focus {
